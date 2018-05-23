@@ -1,0 +1,31 @@
+# editorconfig.org
+root = true
+
+# Frontend can run on Linux or Windows, thus we default to LF.
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Windows and Visual Studio specific files should use CRLF
+[*.{bat,cmd,csproj,ps1,sln}]
+end_of_line = crlf
+
+# Visual Studio tends to assume these use CRLF too...
+[{App.config,packages.config,Web.config,Web.Debug.config,Web.Release.config}]
+end_of_line = crlf
+indent_size = 4
+
+[*.{cs,aspx,asax,cshtml}]
+end_of_line = crlf
+indent_size = 4
+
+# As a catch-all, the entire backend is CRLF because it runs only on Windows.
+[server/*]
+end_of_line = crlf
+
+[*.md]
+insert_final_newline = false

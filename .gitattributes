@@ -1,0 +1,43 @@
+# If Git decides that the content is text, the line endings will be
+# normalized to LF on checkin. This keeps line endings consistent
+# in the repo no matter what happens in the working directory.
+* text=auto
+
+# Make the working directory consistent with the repo; use LF for both.
+# http://stackoverflow.com/a/34598449/23566
+* eol=lf
+
+# Visual Studio and Windows specific files should have CRLF on checkout.
+*.bat eol=crlf
+*.cmd eol=crlf
+*.csproj eol=crlf
+*.ps1 eol=crlf
+*.sln eol=crlf
+
+# And Visual Studio tends to assume these use CRLF. Don't fight it.
+App.config eol=crlf
+packages.config eol=crlf
+Web.config eol=crlf
+Web.*.config eol=crlf
+db.*.config eol=crlf
+*.pubxml eol=crlf
+
+# As a catch-all, let's make the entire backend CLRF.
+server/ eol=crlf
+
+# These files are binary and should not be normalized.
+# We must set them explicitly since eol=lf "enables end-of-line normalization
+# without any content checks".
+*.eot -text
+*.gif -text
+*.gz -text
+*.ico -text
+*.jpeg -text
+*.jpg -text
+*.otf -text
+*.png -text
+*.svg -text
+*.ttf -text
+*.woff -text
+*.woff2 -text
+*.zip -text
