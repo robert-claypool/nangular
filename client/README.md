@@ -74,7 +74,6 @@ Run `ng test` for unit tests with [Karma](https://karma-runner.github.io).
 ## Running end-to-end tests
 
 Run `ng e2e` for end-to-end tests with [Protractor](http://www.protractortest.org/).
-Before running these tests, make sure you are serving the app with `ng serve`.
 
 # Dev and Debugging
 Run `ng serve`, this launches a Webpack dev server.
