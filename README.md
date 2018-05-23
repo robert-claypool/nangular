@@ -9,6 +9,6 @@ simple routing to be handled by ASP; meanwhile the Angular SPA sits inside
 an MVC view (`Index.cshtml`) which is not reachable until your server
 detects an authenticated and authorized user making the request.
 
-* See [server/README.md](server/README.md] for server and database docs.
+* See [server/README.md](server/README.md) for server and database docs.
 
 * See [client/README.md](client/README.md) for frontend docs.
