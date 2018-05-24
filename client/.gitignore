@@ -60,8 +60,16 @@ typings/
 # next.js build output
 .next
 
-# Build output
+# misc
+.sass-cache
+connect.lock
+libpeerconnection.log
+testem.log
+
+# compiled output
 dist/
+tmp/
+out-tsc/
 
 # IDE local files
 .vscode/
@@ -75,4 +83,5 @@ dist/
 
 # OS local files
 .DS_Store
+Thumbs.db
 
