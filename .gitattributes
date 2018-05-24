@@ -41,3 +41,4 @@ server/** eol=crlf
 *.woff -text
 *.woff2 -text
 *.zip -text
+*.sqlite -text
