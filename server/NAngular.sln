@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAngular.Domain", "NAngular
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAngular.DataAccess", "NAngular.DataAccess\NAngular.DataAccess.csproj", "{289D7E47-522B-4429-B6FC-92D99AC60230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAngularWeb", "NAngularWeb\NAngularWeb.csproj", "{AB96C91B-AA6E-4822-BB82-7CF6DCC9C85C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{289D7E47-522B-4429-B6FC-92D99AC60230}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{289D7E47-522B-4429-B6FC-92D99AC60230}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{289D7E47-522B-4429-B6FC-92D99AC60230}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB96C91B-AA6E-4822-BB82-7CF6DCC9C85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB96C91B-AA6E-4822-BB82-7CF6DCC9C85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB96C91B-AA6E-4822-BB82-7CF6DCC9C85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB96C91B-AA6E-4822-BB82-7CF6DCC9C85C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
