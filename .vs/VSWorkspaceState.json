@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\nangular",
+    "\\client\\nangular\\e2e",
+    "\\server",
+    "\\server\\NAngular",
+    "\\server\\NAngular\\App_Data",
+    "\\server\\NAngular\\Views",
+    "\\server\\NAngular\\Views\\Home",
+    "\\server\\NAngular\\Views\\Shared"
+  ],
+  "SelectedNode": "\\client\\nangular\\src",
+  "PreviewInSolutionExplorer": false
+}
