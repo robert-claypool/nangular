@@ -49,10 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity.cs">
+      <DependentUpon>AppDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="AppDataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AppDataModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -61,6 +69,9 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs">
+      <DependentUpon>AppDataModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="AppDataModel.edmx">
@@ -79,8 +90,14 @@
     <Content Include="AppDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AppDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>AppDataModel.edmx</DependentUpon>
     </Content>
     <Content Include="AppDataModel.edmx.sql" />
+    <Content Include="AppDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AppDataModel.cs</LastGenOutput>
+      <DependentUpon>AppDataModel.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
