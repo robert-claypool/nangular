@@ -23,7 +23,7 @@ db.*.config eol=crlf
 *.pubxml eol=crlf
 
 # As a catch-all, let's make the entire backend CLRF.
-server/ eol=crlf
+server/** eol=crlf
 
 # These files are binary and should not be normalized.
 # We must set them explicitly since eol=lf "enables end-of-line normalization
@@ -41,3 +41,6 @@ server/ eol=crlf
 *.woff -text
 *.woff2 -text
 *.zip -text
+*.sqlite -text
+*.mdf -text
+*.ldf -text
