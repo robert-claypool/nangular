@@ -7,7 +7,7 @@
     "tslint-config-prettier"
   ],
   "rules": {
-    "prettier": true,
+    "prettier": [true, "../.prettierrc"],
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
