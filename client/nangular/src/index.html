@@ -1,14 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>nAngular</title>
-  <base href="/">
+  <head>
+    <!-- Keep meta at the top -->
+    <meta charset="utf-8">
+    <meta name="description" content="An Angular 6 and .NET starter project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Force IE 8/9/10 to render in the highest available mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>nAngular</title>
+    <!-- Angular router requires a base href -->
+    <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- NoScript styles must be in this header to be usable. -->
+    <style type="text/css">
+      #noscript-spacer {
+        margin-top: 3rem;
+      }
+      #noscript-warning, #browser-warning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #ffffff;
+        background-color: #a52a2a;
+        padding: 0.3rem 0;
+      }
+    </style>
+    <!-- Add all other scripts and styles to angular.json, not here. -->
+    <!-- Why? To bundle them, minify, tree-shake, and remove dead code. -->
+    <!-- https://github.com/angular/angular-cli/wiki/build -->
+  </head>
+  <body>
+    <noscript>
+      <div id="noscript-spacer"></div>
+      <div id="noscript-warning">
+        This site needs JavaScript to run properly.
+        Please enable JavaScript in your browser.
+      </div>
+    </noscript>
+
+    <!-- IE 9 was the last version to support conditional comments. -->
+    <!-- http://stackoverflow.com/a/34331225 -->
+    <!--[if lt IE 9]>
+    <div id="browser-warning">
+      You are using an unsupported browser.
+      For Internet Explorer, this site requires version 11 or higher.
+    </div>
+    <![endif]-->
+
+    <app-root>
+      <div style="font-size:1.2rem;margin:1.2rem;">
+        Loading...
+      </div>
+    </app-root>
+  </body>
 </html>
