@@ -21,6 +21,7 @@ import { CustomRouterStateSerializer } from './shared/utils';
     // Do not put any other kind of class in declarations; not NgModule
     // classes, not service classes, not model classes.
     AppComponent,
+    RobertComponent,
   ],
   exports: [
     // A subset of declarations that should be visible and useable in the
