@@ -1,0 +1,1 @@
+This folder is to save/share the output of any reports.
