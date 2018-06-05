@@ -1,13 +1,8 @@
-using DM = NAngular.DataAccess.DataMapper;
-using NAngular.DataAccess.Repositories.Interfaces;
 using NAngular.DataAccess.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NAngular.DataAccess.Repositories.Interfaces;
 using Unity;
 using Unity.Extension;
+using DM = NAngular.DataAccess.DataMapper;
 
 namespace NAngular.DataAccess
 {
@@ -16,14 +11,12 @@ namespace NAngular.DataAccess
         private static IUnityContainer _container { get; set; }
 
         /// <summary>
-        /// 
         /// </summary>
         protected override void Initialize()
         {
-            _container = Container;            
-            _container.RegisterType<DM.IDataMapper, DM.DataMapper>();            
+            _container = Container;
+            _container.RegisterType<DM.IDataMapper, DM.DataMapper>();
             _container.RegisterType<IUserRepository, UserRepository>();
-            
         }
 
         public static IUnityContainer GetConfiguredContainer()

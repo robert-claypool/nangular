@@ -1,9 +1,5 @@
-using NAngular.Domain.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NAngular.Domain.Models;
 
 namespace NAngular.Services.Interfaces
 {
@@ -11,9 +7,9 @@ namespace NAngular.Services.Interfaces
     {
         List<User> GetAllApplicationUsers();
 
-        User GetUserDetails(string Email);
+        User GetUserDetails(string email);
 
-        User GetUserDetails(int UserId);
+        User GetUserDetails(int userId);
 
         int InsertUpdatetUser(User user);
 

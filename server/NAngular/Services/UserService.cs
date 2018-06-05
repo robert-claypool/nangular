@@ -1,18 +1,14 @@
+using System.Collections.Generic;
 using NAngular.DataAccess.Repositories.Interfaces;
 using NAngular.Domain.Models;
 using NAngular.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Unity.Attributes;
 
 namespace NAngular.Services
 {
     public class UserService : IUserService
     {
-        [Dependency]
-        public IUserRepository UserRepository { get; set; }
+        [Dependency] public IUserRepository UserRepository { get; set; }
 
         public List<User> GetAllApplicationUsers()
         {
@@ -24,14 +20,14 @@ namespace NAngular.Services
             return UserRepository.GetAllRoles();
         }
 
-        public User GetUserDetails(string Email)
+        public User GetUserDetails(string email)
         {
-            return UserRepository.GetUserDetails(Email);
+            return UserRepository.GetUserDetails(email);
         }
 
-        public User GetUserDetails(int UserId)
+        public User GetUserDetails(int userId)
         {
-            return UserRepository.GetUserDetails(UserId);
+            return UserRepository.GetUserDetails(userId);
         }
 
         public int InsertUpdatetUser(User user)
