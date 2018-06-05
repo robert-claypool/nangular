@@ -1,6 +1,3 @@
-nAngular Client
-===============
-
 # Introduction
 This is 'nAngular Client', our front end SPA written in Angular 6 TypeScript!
 
