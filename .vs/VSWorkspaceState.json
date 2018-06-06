@@ -6,11 +6,9 @@
     "\\client\\nangular\\e2e",
     "\\server",
     "\\server\\NAngular",
-    "\\server\\NAngular\\App_Data",
-    "\\server\\NAngular\\Views",
-    "\\server\\NAngular\\Views\\Home",
-    "\\server\\NAngular\\Views\\Shared"
+    "\\server\\NAngular.DataAccess",
+    "\\server\\NAngular\\Controllers"
   ],
-  "SelectedNode": "\\client\\nangular\\src",
+  "SelectedNode": "\\server\\NAngular\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

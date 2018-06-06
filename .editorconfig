@@ -10,22 +10,22 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# Windows and Visual Studio specific files should use CRLF
-[*.{bat,cmd,csproj,ps1,sln}]
+# Windows scripts should always use CRLF.
+[*.{bat,cmd,ps1}]
 end_of_line = crlf
 
-# Visual Studio tends to assume these use CRLF too...
-[{App.config,packages.config,Web.config,Web.Debug.config,Web.Release.config}]
-end_of_line = crlf
-indent_size = 4
-
-[*.{cs,aspx,asax,cshtml}]
-end_of_line = crlf
-indent_size = 4
-
-# As a catch-all, the entire backend is CRLF because it runs only on Windows.
+# The backend is developed on Windows and deployed to Windows Server.
 [server/*]
 end_of_line = crlf
 
+# Four space indent is standard for Visual Studio project configs.
+[{App.config,Web.config,Web.Debug.config,Web.Release.config}]
+indent_size = 4
+
+# Four space indent is standard for C# too.
+[*.{cs,aspx,asax,cshtml}]
+indent_size = 4
+
 [*.md]
+trim_trailing_whitespace = false
 insert_final_newline = false
