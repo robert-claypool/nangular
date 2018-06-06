@@ -1,8 +1,8 @@
-nAngular Client
-===============
-
 # Introduction
 This is 'nAngular Client', our front end SPA written in Angular 6 TypeScript!
+
+> For performance audits, see
+> [performance-reports/README.md](performance-reports/README.md).
 
 # Initial Setup
 We use Angular CLI for dev work and production deployments.

@@ -7,22 +7,12 @@
 # http://stackoverflow.com/a/34598449/23566
 * eol=lf
 
-# Visual Studio and Windows specific files should have CRLF on checkout.
+# Windows scripts should have CRLF on checkout.
 *.bat eol=crlf
 *.cmd eol=crlf
-*.csproj eol=crlf
 *.ps1 eol=crlf
-*.sln eol=crlf
 
-# And Visual Studio tends to assume these use CRLF. Don't fight it.
-App.config eol=crlf
-packages.config eol=crlf
-Web.config eol=crlf
-Web.*.config eol=crlf
-db.*.config eol=crlf
-*.pubxml eol=crlf
-
-# As a catch-all, let's make the entire backend CLRF.
+# The backend is developed on Windows and deployed to Windows Server.
 server/** eol=crlf
 
 # These files are binary and should not be normalized.
