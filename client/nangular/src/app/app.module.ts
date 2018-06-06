@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { metaReducers, reducers } from './reducers';
 import { CustomRouterStateSerializer } from './shared/utils';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,8 @@ import { CustomRouterStateSerializer } from './shared/utils';
     //
     // See https://github.com/ngrx/platform/blob/master/docs/effects/api.md#forroot
     EffectsModule.forRoot([]),
+
+    BrowserAnimationsModule,
   ],
   providers: [
     // The `RouterStateSnapshot` provided by the `Router` is a large complex
