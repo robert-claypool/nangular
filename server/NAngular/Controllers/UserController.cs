@@ -10,7 +10,6 @@ namespace NAngular.Controllers
     {
         [Dependency] public IUserService UserService { get; set; }
 
-
         /// <summary>
         ///     This method provides list of application users and their roles
         /// </summary>

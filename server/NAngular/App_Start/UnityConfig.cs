@@ -14,8 +14,6 @@ namespace NAngular.App_Start
         private static Lazy<IUnityContainer> container = new Lazy<IUnityContainer>(() =>
         {
             var container = new UnityContainer();
-            
-
 
             container.AddNewExtension<NAngular.UnityExtension>();
             container.AddNewExtension<NAngular.DataAccess.UnityExtension>();
@@ -23,7 +21,6 @@ namespace NAngular.App_Start
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
             return container;
         });
-
 
         /// <summary>
         /// Gets the configured Unity container.
@@ -37,6 +34,5 @@ namespace NAngular.App_Start
             return container.Value;
         }
         #endregion
-
     }
 }
