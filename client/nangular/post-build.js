@@ -52,25 +52,25 @@ if (styleTags) {
 
 sh.ls('runtime*.js').forEach(function(file) {
   // Exists for PRODUCTION builds.
-  scriptTags = `<script src="Scripts\/SPA\/${file}"><\/script>\n`;
+  scriptTags = `<script src="Scripts\/SPA\/${file}"><\/script>\r\n`;
   sh.cp(file, scriptsPath);
 });
 sh.ls('polyfills*.js').forEach(function(file) {
   // Exists for PRODUCTION & DEVELOPMENT builds.
   scriptTags =
-    scriptTags + indent + `<script src="Scripts\/SPA\/${file}"><\/script>\n`;
+    scriptTags + indent + `<script src="Scripts\/SPA\/${file}"><\/script>\r\n`;
   sh.cp(file, scriptsPath);
 });
 sh.ls('styles*.js').forEach(function(file) {
   // Exists for DEVELOPMENT builds.
   scriptTags =
-    scriptTags + indent + `<script src="Scripts\/SPA\/${file}"><\/script>\n`;
+    scriptTags + indent + `<script src="Scripts\/SPA\/${file}"><\/script>\r\n`;
   sh.cp(file, scriptsPath);
 });
 sh.ls('vendor*.js').forEach(function(file) {
   // Exists for DEVELOPMENT builds.
   scriptTags =
-    scriptTags + indent + `<script src="Scripts\/SPA\/${file}"><\/script>\n`;
+    scriptTags + indent + `<script src="Scripts\/SPA\/${file}"><\/script>\r\n`;
   sh.cp(file, scriptsPath);
 });
 sh.ls('main*.js').forEach(function(file) {
