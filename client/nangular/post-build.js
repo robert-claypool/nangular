@@ -86,3 +86,8 @@ sh.sed(
   scriptTags,
   layoutsPath + '_Layout.cshtml'
 );
+
+sh.echo('');
+sh.echo('-------------------------------');
+sh.echo(`-- Done, build ID is ${changeset} --`);
+sh.echo('-------------------------------');
