@@ -28,7 +28,7 @@ This is an opinionated starter. It is based on Angular CLI 6 and includes:
 * Simple user management WebAPI to be used as an example
 * Unix-style line endings (LF) for the Angular client, Windows-style (CRLF) for the server backend
 * Settings to prevent XSS and unnecessary info disclosures
-* A documented build process which ties togeter the frontend and backend codebases, see below:
+* A documented build process which ties together the frontend and backend codebases, see below:
 
 ## How it Works
 Our primary goal was to embed a fully functioning Angular app into a "wrapper" page hosted
@@ -58,7 +58,7 @@ The MVC layout points to files *copied* by `post-build.js`. This is fine if you 
 constantly changing them, but for active development, those files are too old.
 
 Solution: Continue to use all the hotness of Angular CLI. Run your frontend with
-`npm run start` and keep http://localhost:4200 open duing development. This gives
+`npm run start` and keep http://localhost:4200 open during development. This gives
 real time feedback with Hot Module Replacement and debugging is easy with whatever
 flavor of TypeScript debugger you prefer (I like VS Code with *'Debugger for Chrome'*).
 
