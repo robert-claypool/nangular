@@ -10,7 +10,6 @@
     <!--Angular router requires a base href.-->
     <base href="/">
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
     <!--NoScript styles must be in this header to be usable.-->
     <style type="text/css">
       #noscript-spacer {
@@ -29,6 +28,8 @@
       }
     </style>
     <!--POST-BUILD.JS_STYLES_GO_HERE-->
+    <!--Keep scripts last, they should not block the loading of styles.-->
+    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <noscript>
