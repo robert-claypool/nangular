@@ -20,6 +20,9 @@ namespace NAngular
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             UnityConfig.GetConfiguredContainer();
+
+            // Do not add "X-AspNetMvc-Version" to the response headers
+            MvcHandler.DisableMvcResponseHeader = true;
         }
 
         protected void Application_EndRequest()
@@ -33,11 +36,8 @@ namespace NAngular
             }
             if (headers.AllKeys.Contains("X-AspNet-Version"))
             {
+                // This is never reached if httpRuntime enableVersionHeader=false
                 headers.Remove("X-AspNet-Version");
-            }
-            if (headers.AllKeys.Contains("X-AspNetMvc-Version"))
-            {
-                headers.Remove("X-AspNetMvc-Version");
             }
         }
     }
