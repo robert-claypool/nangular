@@ -1,2 +1,5 @@
-# Ignore merge tool artifacts
+# Merge tool artifacts
 *.orig
+
+# IDE settings
+.vscode
