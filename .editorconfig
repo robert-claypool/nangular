@@ -1,30 +1,13 @@
 # editorconfig.org
 root = true
 
-# Frontend can run on Linux or Windows, thus we default to LF.
+# Set defaults that are common to both client and server.
 [*]
 indent_style = space
-indent_size = 2
-end_of_line = lf
+# Please don't specify an indent_size here; that has too many unintended consequences.
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
-
-# Windows scripts should always use CRLF.
-[*.{bat,cmd,ps1}]
-end_of_line = crlf
-
-# The backend is developed on Windows and deployed to Windows Server.
-[server/*]
-end_of_line = crlf
-
-# Four space indent is standard for Visual Studio project configs.
-[{App.config,Web.config,Web.Debug.config,Web.Release.config}]
-indent_size = 4
-
-# Four space indent is standard for C# too.
-[*.{cs,aspx,asax,cshtml}]
-indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
