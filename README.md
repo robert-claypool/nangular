@@ -73,3 +73,10 @@ So, development typically consists of running the backend and frontend in
 separate IDEs, or if you aren't making changes to the frontend, then run the
 backend alone because `_Layout.cshtml` should already point to a recent
 frontend build.
+
+## Use 'npm run build' for Production
+Using `ng build` will not give you all production optimizations and
+Ahead-of-Time (AOT) compilation. Use `npm run build` instead!
+
+AOT for production builds may result in larger bundles, but improves runtime
+performance, see http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/
