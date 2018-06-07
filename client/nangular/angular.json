@@ -65,7 +65,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "nangular:build"
+            "browserTarget": "nangular:build",
+            "hmrWarning": false
           },
           "configurations": {
             "production": {
