@@ -1,4 +1,4 @@
-using NAngular.Services;
+﻿using NAngular.Services;
 using NAngular.Services.Interfaces;
 using Unity;
 using Unity.Extension;
@@ -10,8 +10,6 @@ namespace NAngular
     {
         private static IUnityContainer _container { get; set; }
 
-        /// <summary>
-        /// </summary>
         protected override void Initialize()
         {
             _container = Container;
