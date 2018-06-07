@@ -27,3 +27,4 @@ This is an opinionated starter. It is based on Angular CLI 6 and includes:
 * Linting with rules to suit [Prettier](https://prettier.io/docs/en/why-prettier.html)
 * Simple UserManagement WebAPI to be used as an example
 * Unix style line endings (LF) for the Angular Client, Windows style (CRLF) for the server backend
+* Configurations and code to prevent XSS and unnecessary information disclosures.
