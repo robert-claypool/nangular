@@ -328,3 +328,10 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
+
+# Angular build files copied by post-build.js
+*/Content/SPA
+*/Scripts/SPA
+
+# This layout changes with each run of post-build.js
+*/Views/Shared/_Layout.cshtml
