@@ -21,4 +21,17 @@ describe('WelcomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'nAngular'`, async(() => {
+    const welcome = fixture.debugElement.componentInstance;
+    expect(welcome.title).toEqual('nAngular');
+  }));
+
+  it('should render title in a h1 tag', async(() => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain(
+      'Welcome to nAngular!'
+    );
+  }));
 });
