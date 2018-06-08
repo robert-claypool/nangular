@@ -1,5 +1,5 @@
 # editorconfig.org
-# This config is for backend/server code.
+# This config is for client code.
 # It will be combined with some defaults at the root which are
 # common to both client and server.
 root = false

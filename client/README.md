@@ -101,13 +101,13 @@ Visual Studio to build this frontend.
 ng build --base-href '/nangular/' --target=production
  ```
 
-`ng build` creates a `/dist` folder which contains an entirely
+`ng build` creates a `dist/` folder which contains an entirely
 static website (no server-side rendering or runtime is needed to host the
-site, all you need is a minimal web server which responds to requests for
-static files).
+site, all you need is a [minimal web server](https://www.npmjs.com/package/http-server)
+which responds to requests for static files).
 
-On Windows, use IIS to host the contents of `/dist`. You don't need ASP or
-.NET for this site, just copy the contents of `/dist` into something like
+On Windows, use IIS to host the contents of `dist/`. You don't need ASP or
+.NET for this site, just copy the contents of `dist/` into something like
 `C:\inetpub\wwwroot\nangular`, and finally, convert
 `C:\inetpub\wwwroot\nangular` into a virtual directory in IIS.
 
