@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
 import {
   RouterStateSerializer,
@@ -10,12 +11,13 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { MatButtonModule, MatCardModule } from '@angular/material';
 
 import { environment } from '../environments/environment';
-// If you add any child modules, import them before AppRoutingModule
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { metaReducers, reducers } from './reducers';
 import { CustomRouterStateSerializer } from './shared/utils';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// If you add any child modules, import them before AppRoutingModule
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // Do not put any other kind of class in declarations; not NgModule
     // classes, not service classes, not model classes.
     AppComponent,
+    NotFoundComponent,
   ],
   exports: [
     // A subset of declarations that should be visible and useable in the
