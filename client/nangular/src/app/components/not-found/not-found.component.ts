@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from '../../services/page-title.service';
 
 @Component({
   selector: 'app-not-found',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.scss'],
 })
 export class NotFoundComponent implements OnInit {
-  constructor() {}
+  public constructor(private pageTitleService: PageTitleService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.pageTitleService.updateTitle('Page Not Found');
+  }
 }
