@@ -17,7 +17,8 @@ import { CustomRouterStateSerializer } from './shared/utils';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     // classes, not service classes, not model classes.
     AppComponent,
     NotFoundComponent,
+    WelcomeComponent,
   ],
   exports: [
     // A subset of declarations that should be visible and useable in the
