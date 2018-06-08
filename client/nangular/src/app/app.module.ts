@@ -7,6 +7,7 @@ import {
 } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { MatButtonModule, MatCardModule } from '@angular/material';
 
 import { environment } from '../environments/environment';
 // If you add any child modules, import them before AppRoutingModule
@@ -71,6 +72,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EffectsModule.forRoot([]),
 
     BrowserAnimationsModule,
+
+    // Angular Material Components
+    MatButtonModule,
+    MatCardModule,
   ],
   providers: [
     // The `RouterStateSnapshot` provided by the `Router` is a large complex
