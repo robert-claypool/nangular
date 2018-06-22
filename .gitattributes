@@ -13,6 +13,7 @@
 *.ps1 eol=crlf
 
 # The backend is developed on Windows and deployed to Windows Server.
+db/** eol=crlf
 server/** eol=crlf
 
 # These files are binary and should not be normalized.

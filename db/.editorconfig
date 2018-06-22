@@ -1,0 +1,8 @@
+# editorconfig.org
+# This config is for DB scripts and documentation.
+# It will be combined with some defaults at the root.
+root = false
+
+# Our SQL database runs on Windows, thus default to CRLF.
+[*]
+end_of_line = crlf
